@@ -1,1 +1,6 @@
 
+/file remove [find name="ros-dpbr-CT-CMCC.rsc"]
+/ip firewall address-list remove [find list="dpbr-CT"]
+/ip firewall address-list remove [find list="dpbr-CMCC"]
+/tool fetch url="https://raw.githubusercontent.com/jacyl4/ros-pbr-CT-CMCC/master/ros-dpbr-CT-CMCC.rsc"
+/import ros-dpbr-CT-CMCC.rsc
